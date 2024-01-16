@@ -1,4 +1,6 @@
-﻿namespace Testing.Models
+﻿using System.Collections.Generic;
+
+namespace Testing.Models
 {
     public class Product
     {
@@ -12,8 +14,7 @@
         public string CategoryID { get; set; }
         public string OnSale { get; set; }
         public string StockLevel { get; set; }
-
-
+        public IEnumerable<Category> Categories { get; set; }
 
     }
 }
